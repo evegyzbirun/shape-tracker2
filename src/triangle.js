@@ -14,3 +14,18 @@ Triangle.prototype.checkType = function () {
     return "isosceles triangle";
   }
 };
+Triangle.prototype.isBigTriangle = function () {
+  const sum = this.side1 + this.side2 + this.side3;
+  if (sum > 10) {
+    return 'big';
+  } else {
+    return 'little';
+  }
+};
+
+Triangle.prototype.rightTriangle = function () {
+  // c^2 = a^2 + b^2
+  if (this.side1 ** 2 === (this.side2 ** 2) + (this.side3 ** 2)) {
+    return 'right triangle'
+  }
+}
