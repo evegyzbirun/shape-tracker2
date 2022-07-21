@@ -7,7 +7,13 @@ export default class Square {
   }
 
   checkType() {
-    if (this.side1 === side 2 && this.side1 === )
-  }
+    if (this.side1 === 0 || this.side2 === 0 || this.side3 === 0 || this.side4 === 0) {
+      return "not square";
+    } else if (this.side1 === this.side2 && this.side3 === this.side4 && this.side1 === this.side4) {
+      return "square";
+    } else {
+      return "not square as well";
+    }
+  };
 
 }
